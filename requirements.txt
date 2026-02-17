@@ -1,1 +1,1 @@
-# No dependencies needed
+Flask==2.3.0
