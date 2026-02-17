@@ -1,19 +1,14 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "api/calculate.py",
+      "src": "index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/calculate",
-      "dest": "api/calculate.py"
-    },
-    {
-      "src": "/health",
-      "dest": "api/calculate.py"
+      "src": "/(.*)",
+      "dest": "index.py"
     }
   ]
 }
